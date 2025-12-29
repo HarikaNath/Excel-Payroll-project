@@ -84,14 +84,17 @@ This sheet demonstrates scaling payroll logic from weekly to monthly reporting.
 
 ---
 
-## Screenshots / PDFs
-The following files are included to visually demonstrate each Excel sheet:
+## Files Included
 
-- `screenshots/payroll-sheet.pdf` → Sheet 1: Payroll
-- `screenshots/overtime-bonus-sheet.pdf` → Sheet 2: Overtime & Bonus
-- `screenshots/january-payroll-sheet.pdf` → Sheet 3: January Payroll
+### Excel File
+- [Download Excel Payroll Workbook](data/1st%20exercise%20Pay%20roll.xlsx)
 
-These documents allow reviewers to quickly understand the structure without opening Excel.
+### Screenshots / PDFs
+The following PDF files visually demonstrate each Excel sheet so reviewers can understand the logic without opening Excel:
+
+- [Payroll Sheet (PDF)](screenshots/payroll-sheet.pdf)
+- [Overtime & Bonus Sheet (PDF)](screenshots/overtime-bonus-sheet.pdf)
+- [January Payroll Sheet (PDF)](screenshots/january-payroll-sheet.pdf)
 
 ---
 
