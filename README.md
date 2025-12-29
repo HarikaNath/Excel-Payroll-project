@@ -13,22 +13,6 @@ The goal of this project is to showcase:
 
 ---
 
-## Repository Contents
-excel-payroll-project/
-│
-├── data/
-│ └── 1st exercise Pay roll.xlsx
-│
-├── screenshots/
-│ ├── payroll-sheet.pdf
-│ ├── overtime-bonus-sheet.pdf
-│ └── january-payroll-sheet.pdf
-│
-└── README.md
-
-
----
-
 ## Sheet 1: Payroll
 **Purpose:**  
 Calculate basic weekly pay for each employee using hourly wage and hours worked.
