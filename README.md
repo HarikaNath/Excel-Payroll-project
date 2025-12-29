@@ -83,18 +83,18 @@ January Pay = SUM(Weekly Total Pay Columns)
 This sheet demonstrates scaling payroll logic from weekly to monthly reporting.
 
 ---
-
 ## Files Included
 
-### Excel File
-- [Download Excel Payroll Workbook](data/1st%20exercise%20Pay%20roll.xlsx)
+- **Excel Workbook**
+  - [Pay roll.xlsx](Pay%20roll.xlsx)
 
-### Screenshots / PDFs
-The following PDF files visually demonstrate each Excel sheet so reviewers can understand the logic without opening Excel:
+- **PDF Exports (Sheet-by-Sheet View)**
+  - [Payroll Sheet (Base Pay)](payroll-sheet.pdf)
+  - [Overtime & Bonus Sheet](overtime-bonus-sheet.pdf)
+  - [January Payroll Sheet (Monthly Total)](january-payroll-sheet.pdf)
 
-- [Payroll Sheet (PDF)](screenshots/payroll-sheet.pdf)
-- [Overtime & Bonus Sheet (PDF)](screenshots/overtime-bonus-sheet.pdf)
-- [January Payroll Sheet (PDF)](screenshots/january-payroll-sheet.pdf)
+These PDFs allow reviewers to quickly understand the structure and calculations without opening Excel.
+
 
 ---
 
