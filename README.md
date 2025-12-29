@@ -1,42 +1,127 @@
-# Excel Payroll Project (Hours, Overtime, Bonus, Monthly Total)
+# Excel Payroll Automation Project
 
-## 📌 Project Overview
-This project demonstrates a complete **Excel-based payroll system** that calculates:
+## Project Overview
+This project demonstrates a complete payroll calculation system built using Microsoft Excel.  
+The workbook calculates employee pay based on hourly wages, hours worked, overtime hours, overtime bonuses, weekly total pay, and monthly payroll totals for January.
 
-- Weekly pay based on hourly wage and hours worked  
-- Overtime hours for work exceeding 40 hours per week  
-- Overtime bonus using standard payroll rules  
-- Weekly total pay and **January monthly total pay per employee**  
-
-The project is designed to showcase **Excel formula skills**, **logical functions**, and **payroll analysis**, commonly used in business analytics and operations roles.
-
----
-
-## 📂 Files in This Repository
-- `Payroll.xlsx` → Main Excel payroll workbook  
-- `README.md` → Project explanation and documentation  
-- `screenshots/` → Folder containing screenshots of each worksheet (to be added)
+The goal of this project is to showcase:
+- Excel formula skills
+- Payroll logic implementation
+- Overtime and bonus calculations
+- Clean, structured spreadsheet design
+- Business-ready reporting
 
 ---
 
-## 🧾 Excel Workbook Structure
+## Repository Contents
+excel-payroll-project/
+│
+├── data/
+│ └── 1st exercise Pay roll.xlsx
+│
+├── screenshots/
+│ ├── payroll-sheet.pdf
+│ ├── overtime-bonus-sheet.pdf
+│ └── january-payroll-sheet.pdf
+│
+└── README.md
 
-The Excel file contains **multiple logical sections**, progressing from simple payroll calculations to a full monthly payroll summary.
 
 ---
 
-## 🟦 Sheet 1: Payroll (Basic Pay Calculation)
+## Sheet 1: Payroll
+**Purpose:**  
+Calculate basic weekly pay for each employee using hourly wage and hours worked.
 
-### Purpose
-Calculate **weekly pay** using hourly wage and total hours worked.
+**Columns Explained:**
+- Last Name
+- First Name
+- Hourly Wage
+- Hours Worked
+- Pay
 
-### Key Columns
-- Last Name  
-- First Name  
-- Hourly Wage  
-- Hours Worked  
-- Pay  
+**Logic Used:**
+- Pay is calculated by multiplying hourly wage by hours worked.
 
-### Formula Used
-```excel
+**Formula Example:**
 Pay = Hourly Wage × Hours Worked
+
+
+This sheet forms the foundation of the payroll system.
+
+---
+
+## Sheet 2: Overtime = Bonus
+**Purpose:**  
+Extend the payroll by calculating overtime hours, overtime bonus, and total weekly pay.
+
+**Key Columns:**
+- Hours Worked
+- Overtime Hours
+- Pay
+- Overtime Bonus
+- Total Pay
+
+**Logic Used:**
+- Overtime hours are calculated when hours worked exceed 40.
+- Overtime bonus is calculated at 0.5× hourly wage per overtime hour.
+- Total Pay = Regular Pay + Overtime Bonus
+
+**Key Formulas:**
+Overtime Hours = IF(Hours Worked > 40, Hours Worked - 40, 0)
+Pay = Hourly Wage × Hours Worked
+Overtime Bonus = 0.5 × Hourly Wage × Overtime Hours
+Total Pay = Pay + Overtime Bonus
+
+
+This sheet introduces conditional logic and bonus modeling.
+
+---
+
+## Sheet 3: January Payroll
+**Purpose:**  
+Calculate payroll across multiple weeks in January and generate a monthly total for each employee.
+
+**Weekly Structure:**
+- Weekly Hours Worked (01-Jan, 08-Jan, 15-Jan, 22-Jan, 29-Jan)
+- Weekly Overtime Hours
+- Weekly Pay
+- Weekly Overtime Bonus
+- Weekly Total Pay
+
+**Monthly Calculation:**
+- January Pay is calculated by summing all weekly total pay values.
+
+**Key Formula Example:**
+January Pay = SUM(Weekly Total Pay Columns)
+
+
+This sheet demonstrates scaling payroll logic from weekly to monthly reporting.
+
+---
+
+## Screenshots / PDFs
+The following files are included to visually demonstrate each Excel sheet:
+
+- `screenshots/payroll-sheet.pdf` → Sheet 1: Payroll
+- `screenshots/overtime-bonus-sheet.pdf` → Sheet 2: Overtime & Bonus
+- `screenshots/january-payroll-sheet.pdf` → Sheet 3: January Payroll
+
+These documents allow reviewers to quickly understand the structure without opening Excel.
+
+---
+
+## Skills Demonstrated
+- Microsoft Excel
+- IF conditions
+- SUM functions
+- Payroll calculations
+- Overtime and bonus logic
+- Absolute and relative cell references
+- Business data modeling
+- Documentation and project presentation
+
+---
+
+
+
